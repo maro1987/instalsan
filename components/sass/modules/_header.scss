@@ -1,0 +1,9 @@
+header {
+  @include backImage('../images/header_background.jpg');
+  height: 450px;
+
+  #logo {
+    width: 280px;
+    padding: 30px;
+  }
+}

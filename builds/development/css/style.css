@@ -1,0 +1,444 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,300");
+@import url("https://fonts.googleapis.com/css?family=Anton");
+/* line 5, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 21, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.11/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 1, ../../../components/sass/_base.scss */
+body {
+  font: 300 1em/1em "Open Sans", sans-serif, Helvetiva, Arial;
+}
+
+/* line 5, ../../../components/sass/_base.scss */
+strong {
+  font-weight: 700;
+}
+
+/* line 9, ../../../components/sass/_base.scss */
+p {
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+/* line 14, ../../../components/sass/_base.scss */
+button {
+  background-color: #F6511D;
+  color: #ffffff;
+  font: 400 16px/1.3em "Open Sans", sans-serif, Helvetiva, Arial;
+  border: 0;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 7px;
+}
+/* line 23, ../../../components/sass/_base.scss */
+button:focus {
+  outline: none;
+}
+
+/* line 1, ../../../components/sass/_layout.scss */
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 1, ../../../components/sass/modules/_header.scss */
+header {
+  background: url("../images/header_background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 450px;
+}
+/* line 5, ../../../components/sass/modules/_header.scss */
+header #logo {
+  width: 280px;
+  padding: 30px;
+}
+
+/* line 1, ../../../components/sass/modules/_nav.scss */
+header #nav {
+  background-color: #24292d;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 130px;
+}
+/* line 10, ../../../components/sass/_mixins.scss */
+header #nav:before, header #nav:after {
+  content: '';
+  display: table;
+}
+/* line 15, ../../../components/sass/_mixins.scss */
+header #nav:after {
+  clear: both;
+}
+/* line 9, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+header #nav .navbar:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 12, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 20%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  float: left;
+  text-align: center;
+}
+/* line 17, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li:hover {
+  background-color: #F6511D;
+}
+/* line 21, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li.selected {
+  background-color: #F6511D;
+}
+/* line 25, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a {
+  color: #ffffff;
+  font: 400 1.1em/1.1em "Open Sans", sans-serif, Helvetiva, Arial;
+  padding: 17px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: 2px;
+}
+
+/* line 1, ../../../components/sass/modules/_main.scss */
+main {
+  box-sizing: border-box;
+  padding-bottom: 30px;
+  width: 100%;
+  margin-top: -179px;
+}
+/* line 10, ../../../components/sass/_mixins.scss */
+main:before, main:after {
+  content: '';
+  display: table;
+}
+/* line 15, ../../../components/sass/_mixins.scss */
+main:after {
+  clear: both;
+}
+/* line 8, ../../../components/sass/modules/_main.scss */
+main #homecontent {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+main #homecontent:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 10, ../../../components/sass/modules/_main.scss */
+main #homecontent .infopanel {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 30%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  border-color: #24292d;
+  border-width: 10px;
+  border-style: solid;
+  margin: -10px 10px 10px 10px;
+  width: 300px;
+  text-align: center;
+  padding: 0;
+  height: 450px;
+  color: #ffffff;
+  text-decoration: none;
+}
+/* line 23, ../../../components/sass/modules/_main.scss */
+main #homecontent .infopanel img {
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+/* line 30, ../../../components/sass/modules/_main.scss */
+main #homecontent .infopanel h1 {
+  font: 400 22px/1.2em "Anton", sans-serif;
+  background-color: #24292d;
+  margin: 0px;
+  text-align: left;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+}
+/* line 40, ../../../components/sass/modules/_main.scss */
+main #homecontent .infopanel .arrow-down {
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #24292d;
+}
+/* line 49, ../../../components/sass/modules/_main.scss */
+main #homecontent .infopanel p {
+  font: 400 12px/1.9em "Open Sans", sans-serif, Helvetiva, Arial;
+  color: #000000;
+  text-align: left;
+  line-height: normal;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 62, ../../../components/sass/modules/_main.scss */
+main #aboutcontent {
+  width: 100%;
+  background-color: #ffffff;
+}
+/* line 66, ../../../components/sass/modules/_main.scss */
+main #aboutcontent .fullwidthcontent {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+main #aboutcontent .fullwidthcontent:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 68, ../../../components/sass/modules/_main.scss */
+main #aboutcontent .fullwidthcontent span {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 10%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  font: 400 16px/1.3em "Open Sans", sans-serif, Helvetiva, Arial;
+  background-color: #ffffff;
+  text-align: left;
+  padding: 15px;
+  width: 100%;
+  height: 450px;
+}
+/* line 79, ../../../components/sass/modules/_main.scss */
+main #aboutcontent .fullwidthcontent h1 {
+  font: 400 28px/1.2em "Anton", sans-serif;
+  margin: 0px;
+  text-align: left;
+  padding-top: 25px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+}
+/* line 88, ../../../components/sass/modules/_main.scss */
+main #aboutcontent .fullwidthcontent h2 {
+  font: 400 20px/1.3em "Open Sans", sans-serif, Helvetiva, Arial;
+}
+
+/* line 1, ../../../components/sass/modules/_footer.scss */
+footer {
+  background-color: #24292d;
+  height: 500px;
+  width: 100%;
+}
+/* line 10, ../../../components/sass/_mixins.scss */
+footer:before, footer:after {
+  content: '';
+  display: table;
+}
+/* line 15, ../../../components/sass/_mixins.scss */
+footer:after {
+  clear: both;
+}
+/* line 8, ../../../components/sass/modules/_footer.scss */
+footer #formcontainer {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 450px;
+  padding-top: 20px;
+}
+/* line 12, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+footer #formcontainer:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 14, ../../../components/sass/modules/_footer.scss */
+footer #formcontainer .contactform {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  width: 45%;
+  color: #ffffff;
+  padding-left: 15px;
+}
+/* line 20, ../../../components/sass/modules/_footer.scss */
+footer #formcontainer .contactform h1 {
+  font: 400 22px/1.2em "Anton", sans-serif;
+  background-color: #24292d;
+  margin: 0px;
+  text-align: left;
+  padding-top: 12px;
+  padding-bottom: 22px;
+}
+/* line 29, ../../../components/sass/modules/_footer.scss */
+footer #formcontainer .contactform .form {
+  width: 100%;
+}
+/* line 32, ../../../components/sass/modules/_footer.scss */
+footer #formcontainer .contactform .form textarea:focus, footer #formcontainer .contactform .form input:focus {
+  outline: none;
+}
+/* line 36, ../../../components/sass/modules/_footer.scss */
+footer #formcontainer .contactform .form input, footer #formcontainer .contactform .form textarea {
+  font: 400 16px/1.3em "Open Sans", sans-serif, Helvetiva, Arial;
+  background-color: #222222;
+  border: 0px;
+  color: #ffffff;
+  width: 100%;
+  margin: 0 0 5px;
+  border-radius: 6px;
+  padding: 5px;
+  resize: none;
+}
+/* line 48, ../../../components/sass/modules/_footer.scss */
+footer #formcontainer .contactform .form textarea {
+  height: 200px;
+}
+/* line 52, ../../../components/sass/modules/_footer.scss */
+footer #formcontainer .contactform .form button {
+  float: right;
+}
+/* line 59, ../../../components/sass/modules/_footer.scss */
+footer .divider {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 10%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  border-left: 2px solid #222222;
+  width: 0px !important;
+  min-width: 0px !important;
+  height: 60%;
+  margin-left: 49.5px;
+  margin-right: 25px;
+  margin-top: 50px;
+}
+/* line 71, ../../../components/sass/modules/_footer.scss */
+footer #contactInfoContainer {
+  background-color: #222222;
+  border: 0px;
+  color: #ffffff;
+  width: 100%;
+  border-radius: 6px;
+  padding: 20px;
+  height: 200px;
+}
+/* line 80, ../../../components/sass/modules/_footer.scss */
+footer #contactInfoContainer div {
+  float: left;
+  margin-right: 80px;
+}
+/* line 85, ../../../components/sass/modules/_footer.scss */
+footer #contactInfoContainer span {
+  font: 400 14px/1.3em "Open Sans", sans-serif, Helvetiva, Arial;
+}
+/* line 91, ../../../components/sass/modules/_footer.scss */
+footer .copyright {
+  color: #ffffff;
+  font: 400 14px/1.3em "Open Sans", sans-serif, Helvetiva, Arial;
+  width: 250px;
+  margin-left: 255px;
+}

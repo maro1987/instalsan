@@ -1,0 +1,42 @@
+header #nav {
+  @include clearfix;
+  background-color: $navBackgroundColor;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 130px;
+
+  .navbar {
+    @include container;
+    ul {
+      li {
+        @include span(2);
+        float: left;
+        text-align: center;
+
+        &:hover {
+          background-color: $navButtonHoverColor;
+        }
+
+        &.selected {
+          background-color: $navButtonHoverColor;
+        }
+
+        a {
+          color: $white;
+          font: $navButtonFont;
+          padding: 17px;
+          display: inline-block;
+          text-decoration: none;
+          cursor: pointer;
+          text-align: center;
+          //icon styles
+          background-size: 35px;
+          background-repeat: no-repeat;
+          background-position: 2px;
+        }
+      }
+    }
+
+  }
+}

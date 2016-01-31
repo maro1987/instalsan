@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,300');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+@include border-box-sizing;
+
+$susy: (
+  columns: 10,
+  container: 60em,
+  gutters: 1/5,
+  gutter-position: inside
+);
+
+//Add Color Palette
+$orange: #F6511D;
+$brown: rgba(36, 41, 45, 1);
+$red: #f25f5c; //rgba(242, 95, 92, 100)
+$yellow: #FFB400; //rgba(255, 224, 102, 100)
+$blue: #0D2C54; //rgba(36, 123, 160, 100)
+$green: #7FB800; //rgba(112, 193, 179, 100)
+$white: #ffffff;
+$black: #000000;
+$inputBackgroundColor: rgba(34, 34, 34, 1);
+
+$navBackgroundColor: $brown;
+$navButtonHoverColor: $orange;
+$footerBackgroundColor: $brown;
+
+//Font variables
+$fontFamily: 'Open Sans', sans-serif, Helvetiva, Arial;
+$headerFontFamily: 'Anton', sans-serif;
+
+$thin: 300;
+$normal: 400;
+$bold: 700;
+
+$mainFont: $thin 1em/1em $fontFamily;
+$navButtonFont: $normal 1.1em/1.1em $fontFamily;
+$infopanelHeaderFont: $normal 22px/1.2em $headerFontFamily;
+$infopanelContentFont: $normal 12px/1.9em $fontFamily;
+$contactFormHeaderFont: $normal 22px/1.2em $headerFontFamily;
+$contactFormInputFont: $normal 16px/1.3em $fontFamily;
+$buttonFont:  $normal 16px/1.3em $fontFamily;
+$contactInfoFont: $normal 14px/1.3em $fontFamily;
+$aboutcontentHeaderFont: $normal 28px/1.2em $headerFontFamily;
+$contentFont: $normal 16px/1.3em $fontFamily;
+$contentHeaderFont: $normal 20px/1.3em $fontFamily;

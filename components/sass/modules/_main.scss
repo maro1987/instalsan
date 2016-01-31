@@ -1,0 +1,96 @@
+main {
+  @include clearfix;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+  width: 100%;
+  margin-top: -179px;
+
+  #homecontent {
+    @include container;
+    .infopanel {
+      @include span(3);
+      border-color: $navBackgroundColor;
+      border-width: 10px;
+      border-style: solid;
+      margin: -10px 10px 10px 10px;
+      width: 300px;
+      text-align: center;
+      padding: 0;
+      height: 450px;
+      color: $white;
+      text-decoration: none;
+
+      img {
+        width: 280px;
+        margin: 0;
+        padding: 0;
+        display: block;
+      }
+
+      h1 {
+        font: $infopanelHeaderFont;
+        background-color: $navBackgroundColor;
+        margin: 0px;
+        text-align: left;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+      }
+
+      .arrow-down {
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid $navBackgroundColor;
+      }
+
+      p {
+        font: $infopanelContentFont;
+        color: $black;
+        text-align: left;
+        line-height: normal;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+    }
+  }
+
+  #aboutcontent {
+    width: 100%;
+    background-color: $white;
+
+    .fullwidthcontent {
+      @include container;
+      span {
+        @include span(1);
+        font: $contentFont;
+        background-color: $white;
+
+        text-align: left;
+        padding: 15px;
+        width: 100%;
+        height: 450px;
+      }
+
+      h1 {
+        font: $aboutcontentHeaderFont;
+        margin: 0px;
+        text-align: left;
+        padding-top: 25px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+      }
+
+      h2 {
+        font: $contentHeaderFont;
+      }
+    }
+
+
+
+  }
+}

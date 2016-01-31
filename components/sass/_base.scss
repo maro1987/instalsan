@@ -1,0 +1,26 @@
+body {
+  font: $mainFont;
+}
+
+strong {
+  font-weight: $bold;
+}
+
+p {
+  font-weight: $thin;
+  padding-bottom: 10px;
+}
+
+button {
+  background-color: $orange;
+  color: $white;
+  font: $buttonFont;
+  border: 0;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 7px;
+
+  &:focus {
+    outline: none;
+  }
+}

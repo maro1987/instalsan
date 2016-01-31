@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon"
+        type="image/png"
+        href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#contact").click(function () {
+        $("html, body").animate({scrollTop: $('#formcontainer').offset().top}, 1000);
+      });
+
+
+      $("#form_submit").click(function () {
+        var data = {
+          form_name: $("#form_name").val(),
+          form_email: $("#form_email").val(),
+          form_message: $("#form_message").val()
+        };
+        $.ajax({
+          type: "POST",
+          url: "./php/email.php",
+          data: data,
+          success: function () {
+            $("#form_name").val('');
+            $("#form_email").val('');
+            $("#form_message").val('');
+            alert('Wiadomość wysłana');
+          }
+        })
+      });
+    });
+  </script>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Instalsan - Dawid Rożek</title>
+</head>
+<body>
+<header>
+  <img id="logo" src="images/logo.png" alt="logo">
+  <nav id="nav">
+    <div class="navbar">
+      <ul>
+        <li class="selected"><a href="/"><span>Strona Główna</span></a></li>
+        <li><a class="icon about" href="/onas"><span>O Nas</span></a></li>
+        <li><a class="icon about" href="/sprzet"><span>Sprzęt</span></a></li>
+        <li><a class="icon about" href="/uslugi"><span>Usługi</span></a></li>
+        <li><a id="contact" class="icon about"><span>Kontakt</span></a></li>
+      </ul>
+
+    </div>
+  </nav>
+</header>
+<main>
+  <article id="homecontent">
+    <div class="infopanel">
+      <img src="images/img_1.jpg"/>
+      <h1>Oferta</h1>
+      <div class="arrow-down"></div>
+      <p> Oferujemy Państwu opracowania i wykonawstwo oparte na nowoczesnych technologiach i sprawdzonych rozwiązaniach.
+        <br/>
+        <br/>
+        Współpracujemy z Konstruktorami, Architektami, Drogowcami i Elektrykami a więc zapewniamy Państwu kompleksową
+        obsługę każdej budowy.
+
+      </p>
+    </div>
+    <div class="infopanel">
+      <img src="images/img_2.jpg"/>
+      <h1>Zakres Usług</h1>
+      <div class="arrow-down"></div>
+      <p>
+        Specjalizujemy się w kompleksowym sporządzeniu kosztorysów inwestorskich, sanitarnych, elektrycznych i wyceny
+        robót. Nasze usługi są skierowane do Inwestorów publicznych, biur projektowych, firm wykonawczych oraz osób
+        prywatnych.
+        <br/>
+        <br/>
+
+        Zajmujemy się zaopatrzeniem placu budowy w armaturę, materiały i urządzenia, wykonujemy dokumentacji
+        powykonawczych realizowanych inwestycji.
+
+
+      </p>
+    </div>
+    <div class="infopanel">
+      <img src="images/img_3.jpg"/>
+      <h1>Certyfikaty</h1>
+      <div class="arrow-down"></div>
+      <p> Obsługa systemu do renowacji sieci kanalizacyjnej metodą długiego rękawa, robota frezującego oraz kamery do
+        podglądu kanalizacji.
+        <br/>
+        <br/>
+        Świadectwo kwalifikacyjne D i E. Eksploatacja urządzeń instalacji i sieci na stanowisku dozoru dla urządzeń
+        cieplnych. Urządzenia energetyczne oraz sieci elektroenergetyczne.
+        <br/>
+        <br/>
+        Uprawnienia budowlane do projektowania i wykonywania robót budowlanych
+
+
+      </p>
+    </div>
+  </article>
+</main>
+<footer>
+  <div id="formcontainer">
+    <article class="contactform">
+      <h1>Napisz do nas</h1>
+      <div class="form">
+        <input id="form_name" type="text" name="Imię" placeholder="Imię"/>
+        <input id="form_email" type="text" name="Email" placeholder="Email"/>
+        <textarea id="form_message" name="Wiadomość" placeholder="Wiadomość"></textarea>
+        <button id="form_submit" type="button">Wyślij</button>
+      </div>
+    </article>
+    <div class="divider"></div>
+    <article class="contactform">
+      <h1>Kontakt</h1>
+      <div id="contactInfoContainer">
+        <div>
+          <span>
+          Adres
+            <br/>
+            <br/>
+            <br/>
+            Email
+            <br/>
+            Tel.
+            <br/>
+            <br/>
+        </span>
+        </div>
+        <div>
+          <span>
+          ul. Skrajna 8a
+          <br/>
+          50-031 Wrocław
+            <br/>
+            <br/>
+            dawid@instalsan.net
+            <br/>
+            500 391 084
+        </span>
+        </div>
+      </div>
+    </article>
+  </div>
+  <p class="copyright">
+    <small>© 2016 Instalsan - Dawid Rożek</small>
+  </p>
+</footer>
+</body>
+</html>
